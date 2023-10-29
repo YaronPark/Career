@@ -24,8 +24,6 @@
             border-radius: 4px;
         }
         .profile-image {
-            float: right;  /* 사진을 오른쪽으로 정렬 */
-            margin: 0 0 10px 10px;  /* margin을 조정하여 사진 주위에 공간을 추가 */
             border-radius: 50%;
             width: 100px;
             height: 100px;
@@ -53,10 +51,17 @@
     </header>
 
     <section id="about" class="section">
-        <img src="Yaron.png?raw=true" alt="Yaron Park" class="profile-image">
-        <h2>About Me</h2>
-        <p>Detailing over 20 years of experience in the financial marketing sector, I have a proven track record of successful growth through market pioneering, data analysis, and effective problem-solving strategies...</p>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://Yaron.png?raw=true" alt="Yaron Park" class="profile-image img-fluid">
+            </div>
+            <div class="col-md-9">
+                <h2>About Me</h2>
+                <p>Detailing over 20 years of experience in the financial marketing sector, I have a proven track record of successful growth through market pioneering, data analysis, and effective problem-solving strategies...</p>
+            </div>
+        </div>
     </section>
+    
     <section id="education" class="section">
         <h2>Education</h2>
         <p>
