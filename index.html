@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaron Park's Professional Homepage</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
     <style>
         body {
-    font-family: 'Roboto', sans-serif;
-    /* ...other styles */
-}
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;  /* Updated color */
+        }
         header, footer {
-            background-color: #4b0082;
+            background-color: #343a40;  /* Updated color */
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -20,7 +22,7 @@
             margin: 20px;
             padding: 20px;
             background-color: white;
-            border: 2px solid #4b0082;
+            border: 2px solid #343a40;  /* Updated color */
             border-radius: 4px;
         }
         .profile-image {
@@ -38,7 +40,6 @@
             border-color: #5a3d8e;
         }
     </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -46,10 +47,9 @@
 <body>
 
     <header>
-        <h1>Yaron Park</h1>
-        <p>Data-driven Problem-solving Marketing Specialist</p>
+        <h1 data-aos="fade-down">Yaron Park</h1>  <!-- Added AOS -->
+        <p data-aos="fade-down" data-aos-delay="200">Data-driven Problem-solving Marketing Specialist</p>  <!-- Added AOS -->
     </header>
-
      <section id="about" class="section">
         <div class="row">
             <div class="col-md-9 order-md-1">
@@ -108,7 +108,10 @@
         <a href="https://www.mk.co.kr/news/economy/9844404" target="_blank" class="btn btn-purple">View 4</a>
     </div>
 </section>
-    
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <footer>
         <p>Connect with me on <a href="https://www.linkedin.com/in/yaron-park-45bb7a26/" target="_blank">LinkedIn</a></p>
     </footer>
